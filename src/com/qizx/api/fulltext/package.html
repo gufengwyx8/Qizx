@@ -1,0 +1,34 @@
+/*
+ *    Qizx/open 4.1
+ *
+ * This code is the open-source version of Qizx.
+ * Copyright (C) 2004-2009 Axyana Software -- All rights reserved.
+ *
+ * The contents of this file are subject to the Mozilla Public License 
+ *  Version 1.1 (the "License"); you may not use this file except in 
+ *  compliance with the License. You may obtain a copy of the License at
+ *  http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ *  WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ *  for the specific language governing rights and limitations under the
+ *  License.
+ *
+ * The Initial Developer of the Original Code is Xavier Franc - Axyana Software.
+ *
+ */
+<body>
+<p>This package represents a simple framework for extending and redefining  
+full-text features. It is meant for advanced use.
+<p>Redefining full-text features involves plugging a FullTextFactory implementation
+ which creates or locates various full-text resources defined by the following interfaces:<ul>
+<li>Interface TextTokenizer specifies an object that parses text chunks 
+into "tokens" (a word is a particular kind of token). It is the only mandatory
+feature created by a FullTextFactory.
+<li>interface Stemmer is an object that extracts the "stem" of a word, allowing stemming
+in full-text searches.
+<li>interface Thesaurus defines a thesaurus driver, allowing
+query words to be replaced by words or word sequences found in the thesaurus.
+<li>interface Scorer is an abstraction of the scoring algorithm.
+</ul>
+</body>
